@@ -263,6 +263,7 @@ void aw_fel_print_version(libusb_device_handle *usb)
 	case 0x1667: soc_name="A33"; break;
 	case 0x1673: soc_name="A83T"; break;
 	case 0x1680: soc_name="H3"; break;
+	case 0x1718: soc_name="H5"; break;
 	}
 
 	printf("%.8s soc=%08x(%s) %08x ver=%04x %02x %02x scratchpad=%08x %08x %08x\n",
