@@ -430,7 +430,7 @@ enum { BOOT_DEVICE_UNK, BOOT_DEVICE_FEL, BOOT_DEVICE_MMC0, BOOT_DEVICE_SPI };
 int get_boot_device(void)
 {
 	u32 *spl_signature = (void *)0x4;
-	if (soc_is_a64() || soc_is_a80())
+	if (soc_is_a64() || soc_is_a80() || soc_is_h5())
 		spl_signature = (void *)0x10004;
 
 	/* Check the eGON.BT0 magic in the SPL header */
